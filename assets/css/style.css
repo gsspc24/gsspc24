@@ -2180,3 +2180,7 @@ section {
 .speaker-title-text {
   padding-top: 20px;
 }
+
+.theme-text{
+  text-align: justify;
+}
