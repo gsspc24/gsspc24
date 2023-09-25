@@ -2181,7 +2181,7 @@ section {
   padding-top: 20px;
 }
 
-.theme-text{
+.theme-text {
   text-align: justify;
 }
 
@@ -2207,8 +2207,8 @@ section {
 }
 
 .logo-wrapper {
-  position: relative;   /* Set parent to relative */
-  height: 100%;         /* Adjust height as necessary */
+  position: relative; /* Set parent to relative */
+  height: 100%; /* Adjust height as necessary */
 }
 
 .logo-container {
@@ -2218,15 +2218,22 @@ section {
 }
 
 .logo-container:first-child {
-  left: calc(50% + 20px); /* Adjust this value as per the width of the logos and desired gap */
+  left: calc(
+    50% + 20px
+  ); /* Adjust this value as per the width of the logos and desired gap */
   /* transform: translateX(-150%); */
 }
 
 .logo-container:last-child {
-  left: calc(50% + 250px); /* This will push the second logo to the right of center */
+  left: calc(
+    50% + 250px
+  ); /* This will push the second logo to the right of center */
   /* transform: translateX(-50%); */
 }
 
 .logo-container:hover {
   transform: none; /* Remove any hover effect causing the logos to move */
+}
+.travel-text {
+  text-align: justify;
 }
