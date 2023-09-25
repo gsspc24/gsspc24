@@ -2237,3 +2237,15 @@ section {
 .travel-text {
   text-align: justify;
 }
+
+.logo-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-custom img {
+  max-width: 50%;
+  z-index: -1;
+  display: block;
+}
