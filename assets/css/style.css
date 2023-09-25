@@ -2184,3 +2184,49 @@ section {
 .theme-text{
   text-align: justify;
 }
+
+.logo-container {
+  width: 200px; /* You can adjust this based on your logo's actual size */
+  height: 75px; /* Adjust this too */
+  border-radius: 15px; /* This gives a rounded corner */
+  overflow: hidden; /* This will ensure the rounded corners are visible if your logo is a rectangle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Adds a subtle shadow */
+  margin: 10px; /* Adds space around each logo container */
+  transition: transform 0.3s ease; /* For smooth hover effect */
+}
+
+.logo-container:hover {
+  transform: scale(1.05); /* Slightly enlarges the logo container on hover */
+}
+
+.logo {
+  max-width: 100%; /* Ensures logo never exceeds the container width */
+  max-height: 100%; /* Ensures logo never exceeds the container height */
+  display: block; /* Removes the space at the bottom of inline-block which is default for images */
+  margin: auto; /* Centers the logo inside the container */
+}
+
+.logo-wrapper {
+  position: relative;   /* Set parent to relative */
+  height: 100%;         /* Adjust height as necessary */
+}
+
+.logo-container {
+  position: flex;
+  bottom: 0;
+  /* We won't center both logos with left: 50% anymore; instead, we'll adjust their positions individually */
+}
+
+.logo-container:first-child {
+  left: calc(50% + 20px); /* Adjust this value as per the width of the logos and desired gap */
+  /* transform: translateX(-150%); */
+}
+
+.logo-container:last-child {
+  left: calc(50% + 250px); /* This will push the second logo to the right of center */
+  /* transform: translateX(-50%); */
+}
+
+.logo-container:hover {
+  transform: none; /* Remove any hover effect causing the logos to move */
+}
