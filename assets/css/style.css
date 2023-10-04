@@ -95,12 +95,12 @@ h6 {
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "EB Garamond" sans-serif; 
+  font-family: "EB Garamond" sans-serif;
 }
 
 #header .logo a {
   color: #556270;
-  font-family: "EB Garamond" sans-serif; 
+  font-family: "EB Garamond" sans-serif;
 }
 
 #header .logo img {
@@ -2253,4 +2253,9 @@ section {
 .tweet-container {
   transform: scale(0.8); /* Adjust this value to control the scale */
   transform-origin: top left; /* This ensures scaling starts from the top left corner */
+}
+
+.speaker-img {
+  width: 150px;
+  height: auto;
 }
