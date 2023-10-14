@@ -678,7 +678,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 15px 0;
+  padding: 5px 0;
   text-align: center;
 }
 
@@ -686,7 +686,7 @@ section {
   max-width: 45%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
-  padding: 15px 0;
+  padding: 5px 0;
   filter: grayscale(100);
 }
 
@@ -2259,3 +2259,4 @@ section {
   width: 150px;
   height: auto;
 }
+
