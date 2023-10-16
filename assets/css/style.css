@@ -2255,8 +2255,26 @@ section {
   transform-origin: top left; /* This ensures scaling starts from the top left corner */
 }
 
-.speaker-img {
-  width: 150px;
-  height: auto;
+.pic {
+  height: 150px;  /* Adjust this value based on your desired height */
+  overflow: hidden;  /* This ensures that the image won't overflow the container */
 }
+
+.pic img {
+  width: 100%;  /* Ensure the width of the image fills the container */
+  height: 100%; /* Match the height of the container */
+  object-fit: cover; /* This makes sure the image covers the space without stretching */
+  display: block; /* This removes any default spacing below the image */
+}
+
+.member {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap below each other if there's not enough space */
+}
+
+.member-info {
+  flex: 1; /* Ensures that the description takes up the remaining space after the image */
+}
+
+
 
