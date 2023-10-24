@@ -2310,3 +2310,20 @@ section {
 .nav-tabs .nav-link.active img {
   transform: scale(1.2); /* Increases the logo size for active tab */
 }
+
+/* Style for the sponsor logo container */
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Space around each logo */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+
+.sponsor-logo img {
+  max-width: 100%; /* Ensure the logo fits inside its container */
+}
