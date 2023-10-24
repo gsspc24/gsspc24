@@ -2281,3 +2281,32 @@ section {
   height: auto; /* maintain aspect ratio */
   /* ... other styles like margin, padding, etc. ... */
 }
+
+/* Default style for the tabs (including logos) */
+.nav-tabs .nav-link {
+  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+.nav-tabs .nav-link img {
+  width: 50px;
+  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+/* Hover effect: Slightly enlarges the logo and text on hover */
+.nav-tabs .nav-link:hover {
+  font-size: 105%; /* Slightly increases the text size on hover */
+}
+
+.nav-tabs .nav-link:hover img {
+  transform: scale(1.1); /* Slightly increases the logo size on hover */
+}
+
+/* Active effect: Enlarges the logo and text for the active tab */
+.nav-tabs .nav-link.active {
+  font-size: 110%; /* Increases the text size for active tab */
+  color: #0d5615; /* Optional: Change text color for active tab */
+}
+
+.nav-tabs .nav-link.active img {
+  transform: scale(1.2); /* Increases the logo size for active tab */
+}
