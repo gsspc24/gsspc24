@@ -2256,12 +2256,12 @@ section {
 }
 
 .pic {
-  height: 150px;  /* Adjust this value based on your desired height */
-  overflow: hidden;  /* This ensures that the image won't overflow the container */
+  height: 150px; /* Adjust this value based on your desired height */
+  overflow: hidden; /* This ensures that the image won't overflow the container */
 }
 
 .pic img {
-  width: 100%;  /* Ensure the width of the image fills the container */
+  width: 100%; /* Ensure the width of the image fills the container */
   height: 100%; /* Match the height of the container */
   object-fit: cover; /* This makes sure the image covers the space without stretching */
   display: block; /* This removes any default spacing below the image */
@@ -2276,5 +2276,8 @@ section {
   flex: 1; /* Ensures that the description takes up the remaining space after the image */
 }
 
-
-
+#bronze img {
+  width: 50px; /* adjust width as needed */
+  height: auto; /* maintain aspect ratio */
+  /* ... other styles like margin, padding, etc. ... */
+}
