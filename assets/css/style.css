@@ -2399,3 +2399,51 @@ section {
 #venue .venue-gallery:hover img {
   transform: scale(1.1);
 }
+
+/* Initial state for all sponsor content */
+.sponsor-content {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover state for sponsor categories */
+.nav-tabs .nav-item .nav-link:hover + .sponsor-content,
+.nav-tabs .nav-item .nav-link:focus + .sponsor-content {
+  opacity: 1;
+}
+
+
+
+
+
+/* Ensuring that the row within each tab-pane uses flexbox */
+.tab-pane .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  justify-content: flex-start; /* Aligns items to the start of the main axis */
+}
+
+/* Adjusting each sponsor logo container for left alignment */
+.tab-pane .col-lg-3.sponsor-logo {
+  margin: 10px 10px 10px 0; /* Right margin removed to keep items left justified */
+  flex: 1 0 21%; /* Adjusts each logo to take roughly 25% of the row, adjusting for margin */
+  max-width: 21%; /* Ensures the flex basis does not exceed the calculated width */
+  display: flex;
+  justify-content: flex-start; /* Aligns the logo to the left */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 992px) {
+  .tab-pane .col-lg-3.sponsor-logo {
+    flex: 1 0 46%; /* Two logos per row on medium devices */
+    max-width: 46%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-pane .col-lg-3.sponsor-logo {
+    flex: 1 0 100%; /* One logo per row on smaller devices */
+    max-width: 100%;
+  }
+}
