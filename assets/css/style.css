@@ -2481,3 +2481,15 @@ section {
     height: 100%;
   }
 </style>
+
+.event-details {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+}
+
+.center-image {
+  max-width: 100%; /* Optional: Ensures the image is responsive */
+  height: auto;    /* Optional: Maintains the aspect ratio */
+}
