@@ -2447,40 +2447,7 @@ section {
     max-width: 100%;
   }
 }
-<style>
-  #floating-widget {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    height: 400px;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    z-index: 1000;
-    display: none; /* Initially hidden */
-  }
 
-  #floating-widget .widget-content {
-    padding: 15px;
-  }
-
-  #floating-widget .close-widget {
-    background: #ff0000;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    float: right;
-    font-size: 16px;
-  }
-
-  #floating-widget iframe {
-    width: 100%;
-    height: 100%;
-  }
-</style>
 
 .event-details {
   display: flex;
@@ -2489,7 +2456,3 @@ section {
   text-align: center;
 }
 
-.center-image {
-  max-width: 100%; /* Optional: Ensures the image is responsive */
-  height: auto;    /* Optional: Maintains the aspect ratio */
-}

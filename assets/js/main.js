@@ -81,6 +81,7 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+  
 
   /**
    * Mobile nav dropdowns activate
@@ -183,16 +184,7 @@
 
 })()
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Show the widget after 5 seconds
-    setTimeout(function() {
-      document.getElementById('floating-widget').style.display = 'block';
-    }, 5000);
 
-    // Close the widget
-    document.getElementById('close-widget').addEventListener('click', function() {
-      document.getElementById('floating-widget').style.display = 'none';
-    });
-  });
-</script>
+
+
+
