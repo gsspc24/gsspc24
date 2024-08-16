@@ -2412,10 +2412,6 @@ section {
   opacity: 1;
 }
 
-
-
-
-
 /* Ensuring that the row within each tab-pane uses flexbox */
 .tab-pane .row {
   display: flex;
@@ -2449,10 +2445,57 @@ section {
 }
 
 
-.event-details {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  text-align: center;
+#schedule {
+  font-family: "Poppins", sans-serif;
+  margin: 20px auto;
+  max-width: 1200px; /* Set a reasonable maximum width */
 }
+
+.schedule-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+.schedule-item:hover {
+  background-color: #e6e8eb;
+}
+
+.time {
+  font-weight: bold;
+  color: #0d5615;
+  white-space: nowrap; /* Keeps the time in a single line */
+}
+
+.event-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #444444;
+  
+}
+
+.event-description {
+  color: #6b7b8d;
+  padding-top: 10px;
+
+}
+
+.schedule-item .row {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .event-title {
+    white-space: normal; /* Allows wrapping on smaller screens */
+    padding-left: 5px;   /* Reduces padding on smaller screens */
+  }
+  .time {
+    white-space: normal; /* Allows wrapping on smaller screens */
+  }
+}
+
+/* .logo-spacing {
+  margin-right: 15px; /* Adjust the value as needed */
+} */
 
